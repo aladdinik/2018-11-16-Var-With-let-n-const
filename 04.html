@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="zIK-TEMP/2-css-temp/normalize.css" rel="stylesheet" type="text/css">
+    <link href="zIK-TEMP/2-css-temp/pik-css-temp.css" rel="stylesheet" type="text/css">
+	<script src="zIK-TEMP/3-JS-temp/js-temp.js"></script>
+    <title>04 Template literals</title>
+    <style></style>
+</head>
+<body><!--    Template literals-->
+<main>
+<script>
+    /*template literal*/
+// using backtick / no + sign to concatenate / string interpolation ${}
+    let a = 5;
+    let b = 10;
+    console.log(`Fifteen is ${a + b} and
+    not ${2 * a + b}.`);                       //.1
+    //.1 notice i use a new line. it only seem to work in console
+    /* +\ quote are no longer need as backtick are simpler, only backticks needed to be use once to cocatenated all string. no +sign needed.
+    +\ string interpolation ${} to insert numerous of things including variables/function/doing maths/etc
+
+    /***********************************/
+    
+/*arrow functions*/
+    //a declaration function
+    function declarationF() {
+        return printD(`a declaration function`)
+    };
+    standardF();
+    
+    //a function expression
+    var fExpression = function() {
+        return printD(`a function expression`)
+    };
+    fExpression();
+    
+    //a arrow function
+    const arrowF = () => {
+        return printD(`a arrow function`)
+    };
+    arrowF();
+    /*similar to a function expression. const can be change of course
+    +\ for a single argument than you can remove the parenthesis but more than one argument than a parenthesis is a must
+    */
+    
+    
+    
+    
+    
+// printD();
+// console.log();
+</script>
+</main>
+</body>
+</html>

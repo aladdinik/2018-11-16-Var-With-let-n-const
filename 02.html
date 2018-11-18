@@ -7,7 +7,6 @@
     <link href="zIK-TEMP/2-css-temp/pik-css-temp.css" rel="stylesheet" type="text/css">
 	<script src="zIK-TEMP/3-JS-temp/js-temp.js"></script>
     <title>02 modifying const within arrays and obects</title>
-    <style></style>
 </head>
 <body><!--    modifying const within arrays and obects-->
 <main>
@@ -21,7 +20,7 @@
     // adding or changing through index number is allowed
     days[0] = "monday";
     printD(days);
-    //however you cant add new arrays
+    //however you cannot add new arrays
     
     // addinging to const is allowed
     days.unshift("saturday");
@@ -31,10 +30,11 @@
     days.pop();
     printD(days);
     
+    /*********************************/
     
 /* modifying object */
     const person = {
-        firstN: "alpha",
+        firstN: "alpha"
     };
     printD( person["firstN"] );
     
@@ -42,7 +42,7 @@
     person["surN"] = "bravo";
     printD( person["surN"] );
     
-    //see all current person object (BIM you cannot do this in D.W)
+    //see all current person object (BIM you cannot do this in D.W unless you use for-in loop)
     console.log(person);
     
     //modifying object firstN . a way to redefine a values in const object
@@ -55,11 +55,7 @@
     };
     printD(person);
     //wont work because it is trying to redefine the variable and overide it
-
-    
-    
-// printD();
-// console.log();</script>
+</script>
 </main>
 </body>
 </html>

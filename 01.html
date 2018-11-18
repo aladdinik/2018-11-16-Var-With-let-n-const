@@ -15,6 +15,7 @@
     const name = "alpha";
     printD(name);         //constant variable
     
+    /**************************/
     
 /* attempt to redefine the const value through function */
     function changeN(fName) {  
@@ -24,8 +25,9 @@
     changeN("bravo");
     //.1 typeError if i dont include the 'const' keyword
     /* const has been successfully redefined only because of the function scope.
-    However in the global scope it is still define as the original "alpha" value      */
+    However in the global scope it is still define as the original "alpha" value */
     
+    /******************************/
     
 /* attempt to redefined const thought global scope */
     name = "charlie";  //.1 
