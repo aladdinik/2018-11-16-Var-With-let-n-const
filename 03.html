@@ -48,18 +48,18 @@
     /*************************************/
     
 // var / let changes intermitently
-    var ik = 1;
-    var mk = 2;
+    var one = 1;
+    var two = 2;
 
     if (true) {
-      var ik = 11;    // global scope
-      printD(ik);     // 11
-      let mk = 22;    // var switch to let.  the scope is inside the if-block
-      printD(mk);     // 22 - local scope
+      var one = 11;    // global scope
+      printD(one);     // 11
+      let two = 22;    // var switch to let.  the scope is inside the if-block
+      printD(two);     // 22 - local scope
     } 
 
-    printD(ik);       // 11  - global scope changed
-    printD(mk);       // 2   - global scope unchanged by local scope
+    printD(one);       // 11  - global scope changed
+    printD(two);       // 2   - global scope unchanged by local scope
 </script>
 </main>
 </body>
