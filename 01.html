@@ -13,7 +13,7 @@
 <script>
     /* const is a constant locked variable that cannot be easily changed*/  
     const name = "alpha";
-    printD(name);         //constant variable
+    printD(name); /*OP "alpha" */    //constant variable
     
     /**************************/
     
@@ -22,7 +22,7 @@
         const name = fName;  //.1 
         return printD(name);
     };
-    changeN("bravo");
+    changeN("bravo"); /*OP "bravo" */
     
     //.1 typeError if i dont include the 'const' keyword
     /* const has been successfully redefined only because of the function scope.
@@ -32,7 +32,7 @@
     
 /* attempt to redefined const through global scope */
     name = "charlie";  //.1 
-    printD(name);
+    printD(name); /*OP typeError */
     
     //.1 wont redefine because its already declared
     /* even if i put the const keyword in it, it wont redefine */
